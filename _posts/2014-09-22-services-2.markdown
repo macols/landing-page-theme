@@ -2,7 +2,7 @@
 layout: default
 img: dog.png
 category: Resources
-title: 3D Device Mockups<br>by PSDCovers
+title: Watch
 description: |
 ---
   Turn your 2D designs into high quality, 3D
