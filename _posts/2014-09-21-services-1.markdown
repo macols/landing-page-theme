@@ -8,4 +8,4 @@ description: |
   Looking to read up on all things Service Fabric? Check out some of these sites!
 - [Service Fabric Documentation](https://docs.microsoft.com/en-us/azure/service-fabric/): documents with content ranging from terminology to architecture.
 - [Service Fabric Team Blog](https://blogs.msdn.microsoft.com/azureservicefabric/?orderby=date): keep up to date with the latest Service Fabric news with posts written by the team.
-- [Azure Service Fabric Roadmap](https://azure.microsoft.com/en-us/roadmap/?query=service+fabric/): curious to see where our service is heading? Check out our roadmap to get updates on our service in addition to all things Azure.
+- [Azure Service Fabric Roadmap](https://azure.microsoft.com/en-us/roadmap/?query=service+fabric/): check out Service Fabric's roadmap to get updates on where our service is heading.
