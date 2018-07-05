@@ -6,7 +6,7 @@ title: Watch
 description: |
 ---
 Follow along as various Service Fabric team members explain up and coming features, walk through tutorials, and share their personal experience with the service. 
-- Microsoft Virtual Academy - free Microsoft training delivered by experts. 
+- [Microsoft Virtual Academy](https://mva.microsoft.com/) - free Microsoft training delivered by experts. 
 	- [Introduction to Service Fabric Patterns and Practices](https://mva.microsoft.com/en-US/training-courses/Azure-Service-Fabric-Patterns-and-Practices-16925?l=N2KwbbSGD_6405167344)
 	- [Service Fabric Architecture & Core Concepts](https://mva.microsoft.com/en-US/training-courses/building-microservices-applications-on-azure-service-fabric-16747?l=iYFCk76yC_6706218965)
 	- [Building Microservices Applications on Azure Service Fabric](https://mva.microsoft.com/en-US/training-courses/building-microservices-applications-on-azure-service-fabric-16747)
