@@ -6,6 +6,6 @@ title: Read
 description: |
 ---
   Looking to read up on all things Service Fabric? Check out some of these sites!
-- Foo
+- [Service Fabric Documentation](https://docs.microsoft.com/en-us/azure/service-fabric/) : containing documents with content ranging from terminology to architecture
 - Bar
 - Baz
