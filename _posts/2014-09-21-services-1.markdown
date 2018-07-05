@@ -5,4 +5,7 @@ category: Resources
 title: Read
 description: |
 ---
-  A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
+  Looking to read up on all things Service Fabric? Check out some of these sites!
+- Foo
+- Bar
+- Baz
