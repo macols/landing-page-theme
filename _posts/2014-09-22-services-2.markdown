@@ -16,6 +16,6 @@ Follow along as various Service Fabric team members explain up and coming featur
 		-[Microsoft Ignite](https://www.youtube.com/channel/UCrhJmfAGQ5K81XQ8_od1iTg)
 		-[Microsoft](https://www.youtube.com/channel/UCFtEEv80fQVKkD4h1PF-Xqw)
 	- Videos to get you started:
-	-	[Gopal Kakivaya: The Essence of Service Fabric](https://youtu.be/MrfcP6dS6mU)
-	-	[Service Fabric Community Q&A](https://www.youtube.com/watch?v=FumoTlYYAzs)
-	-	[Team Tour](https://youtu.be/D-1mfk3Vv-4)
+		- [Gopal Kakivaya: The Essence of Service Fabric](https://youtu.be/MrfcP6dS6mU)
+		- [Service Fabric Community Q&A](https://www.youtube.com/watch?v=FumoTlYYAzs)
+		- [Team Tour](https://youtu.be/D-1mfk3Vv-4)
