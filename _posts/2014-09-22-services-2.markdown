@@ -11,7 +11,7 @@ Follow along as various Service Fabric team members explain up and coming featur
 	- [Service Fabric Architecture & Core Concepts](https://mva.microsoft.com/en-US/training-courses/building-microservices-applications-on-azure-service-fabric-16747?l=iYFCk76yC_6706218965)
 	- [Building Microservices Applications on Azure Service Fabric](https://mva.microsoft.com/en-US/training-courses/building-microservices-applications-on-azure-service-fabric-16747)
 - [Microsoft Developer Youtube Account](https://www.youtube.com/channel/UCsMica-v34Irf9KVTh6xx-g) - Microsoft's official YouTube account. 
-	- Pertinant channels include (but aren't limited to):
+	- Pertinent channels include (but aren't limited to):
 		- [Microsoft Azure](https://www.youtube.com/channel/UC0m-80FnNY2Qb7obvTL_2fA)
 		- [Microsoft Ignite](https://www.youtube.com/channel/UCrhJmfAGQ5K81XQ8_od1iTg)
 		- [Microsoft](https://www.youtube.com/channel/UCFtEEv80fQVKkD4h1PF-Xqw)
