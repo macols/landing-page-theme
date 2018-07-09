@@ -2,7 +2,7 @@
     <!-- Page Content -->
     {% for post in site.posts reversed %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' and post.title != 'Watch' %}
+    {% if thecycle == 'odd' and post.title != 'Watch' and post.title != 'Read' %}
     <div class="content-section-a">
 
         <div class="container">
@@ -24,6 +24,24 @@
 
     </div>
     <!-- /.content-section-a -->
+    {% else if post.title == 'Read' %}
+    <div class="content-section-d">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                   <p> hi </p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-d -->
     {% else if post.title == 'Watch' %}
     <div class="content-section-b">
 
@@ -43,7 +61,6 @@
 
     </div>
     <!-- https://youtu.be/D-1mfk3Vv-4 link -->
-
     <!-- /.content-section-b -->
     {% else %}
 
