@@ -1131,6 +1131,10 @@ mark,
   padding: .2em;
   background-color: #fcf8e3;
 }
+.equal {
+    display: -webkit-flex;
+    display: flex;
+}
 .text-left {
   text-align: left;
 }
