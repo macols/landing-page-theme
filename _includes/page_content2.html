@@ -68,8 +68,76 @@
                 <div class="clearfix"></div>
                 <h2 class="section-heading">{{ post.title }}</h2>
                 <p class="lead"> Here are a few highlighted videos to get you started.</p>
-            </div> 
+            </div> <!--
+            <!-- <div class="lead">{{ post.content }}</div> -->
+            <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col">
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <!--Content-->
+                                <div class="modal-content">
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">
+                                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FumoTlYYAzs" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Content-->
+                            </div>
+                        </div>
+                        <!--Modal: Name-->
+                        <a><img class="img-responsive" src="img/25QandA2.JPG" alt="video" data-toggle="modal" data-target="#modal1"></a>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-4">
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <!--Content-->
+                                <div class="modal-content">
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">
+                                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P-VmFhh2XJk" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Content-->
+                            </div>
+                        </div>
+                        <!--Modal: Name-->
+                        <a><img class="img-responsive" src="img/chack_mesh.JPG" alt="video" data-toggle="modal" data-target="#modal6"></a>
 
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-4">
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <!--Content-->
+                                <div class="modal-content">
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">
+                                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EU9Wp3S9bCE" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Content-->
+                            </div>
+                        </div>
+                        <!--Modal: Name-->
+                        <a><img class="img-responsive" src="img/oana_health_manager.JPG" alt="video" data-toggle="modal" data-target="#modal6"></a>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
             </div>
         <div class="container">
             <div class="row" style="margin-top: 20px">
@@ -86,6 +154,7 @@
             </div>
         </div>
     </div>
+    <!-- https://youtu.be/D-1mfk3Vv-4 link -->
 
     <!-- /.content-section-b -->
     {% else %}
