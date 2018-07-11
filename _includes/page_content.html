@@ -3,63 +3,63 @@
     {% for post in site.posts reversed %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if post.title == 'Read' %}
-    <div class="content-section-a">
+     <div class="content-section-a">
 
-        <div class="container">
+         <div class="container">
 
-            <div class="row">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">{{ post.title }}</h2>
+             <div class="row">
+                 <hr class="section-heading-spacer">
+                 <div class="clearfix"></div>
+                 <h2 class="section-heading">{{ post.title }}</h2>
 
-                <div class="row">
+                 <div class="row">
 
-                    <div class="col-lg-4">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">Service Fabric Documentation</h2>
-                            </div>
-                            <div class="panel-body lead">
-                                Documents with content ranging from terminology to architecture written by Service Fabric team-members. <br />
-                                <img src="img/book_icon.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
-                                <a href="https://docs.microsoft.com/en-us/azure/service-fabric/" class="btn btn-info btn-md">Go</a>
-                            </div>
-                        </div>
-                    </div>
+                     <div class="col-lg-4">
+                         <div class="panel panel-info">
+                             <div class="panel-heading">
+                                 <h2 class="panel-title">Service Fabric Documentation</h2>
+                             </div>
+                             <div class="panel-body lead">
+                                 Documents with content ranging from terminology to architecture written by Service Fabric team-members. <br />
+                                 <img src="img/book_icon.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
+                                 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/" class="btn btn-info btn-md">Go</a>
+                             </div>
+                         </div>
+                     </div>
 
-                    <div class="col-lg-4">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">Service Fabric Team Blog</h2>
-                            </div>
-                            <div class="panel-body lead">
-                                Keep up to date with the latest Service Fabric news with posts written by the team. <br />
-                                <img src="img/blog_icon3.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
-                                <a href="https://blogs.msdn.microsoft.com/azureservicefabric/?orderby=date" class="btn btn-info btn-md">Go</a>
-                            </div>
-                        </div>
-                    </div>
+                     <div class="col-lg-4">
+                         <div class="panel panel-info">
+                             <div class="panel-heading">
+                                 <h2 class="panel-title">Service Fabric Team Blog</h2>
+                             </div>
+                             <div class="panel-body lead">
+                                 Keep up to date with the latest Service Fabric news with posts written by the team. <br />
+                                 <img src="img/blog_icon3.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
+                                 <a href="https://blogs.msdn.microsoft.com/azureservicefabric/?orderby=date" class="btn btn-info btn-md">Go</a>
+                             </div>
+                         </div>
+                     </div>
 
-                    <div class="col-lg-4">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">Azure Service Fabric Roadmap</h2>
-                            </div>
-                            <div class="panel-body lead">
-                                Check out Service Fabric's roadmap to get updates on where our service is heading. <br />
-                                <img src="img/map_icon.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
-                                <a href="https://azure.microsoft.com/en-us/roadmap/?query=service+fabric/" class="btn btn-info btn-md">Go</a>
-                            </div>
-                        </div>
-                    </div>
+                     <div class="col-lg-4">
+                         <div class="panel panel-info">
+                             <div class="panel-heading">
+                                 <h2 class="panel-title">Azure Service Fabric Roadmap</h2>
+                             </div>
+                             <div class="panel-body lead">
+                                 Check out Service Fabric's roadmap to get updates on where our service is heading. <br />
+                                 <img src="img/map_icon.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
+                                 <a href="https://azure.microsoft.com/en-us/roadmap/?query=service+fabric/" class="btn btn-info btn-md">Go</a>
+                             </div>
+                         </div>
+                     </div>
 
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
+                 </div>
+             </div>
+         </div>
+    <!-- /.container -->
     </div>
     <!-- /.content-section-a -->
-    {% else if post.title == 'Watch' %}
+    {% elseif post.title == 'Watch' %}
     <div class="content-section-b">
         <div class="row">
             <div class="container">
@@ -176,98 +176,98 @@
                             </div>
                         </div>
                     </div>
-                <!--    <div class="col-md-3">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">Microsoft Azure Service Fabric</div>
-                            <div class="panel-body">
-                                <a href="https://www.youtube.com/channel/UC0nFiDDfBO8yhmGV0kgPiNw">
-                                    <img src="img/asf_logo.jpg" alt="Lights" style="width:100%">
-                                </a>
-                            </div>
-                            <div class="panel-footer">
-                                <div class="dropdown">
-                                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" style="width:100%">
-                                        Videos
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://www.youtube.com/watch?v=K32KfaGx500">Community Q&A #1 </a></li>
-                                        <li><a href="https://www.youtube.com/watch?v=xGSjyDmeue8">Community Q&A #2</a></li>
-                                        <li><a href="https://www.youtube.com/watch?v=dU4KGvDu7F4">Community Q&A #3</a></li>
-                                    </ul>
+                    <!--    <div class="col-md-3">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">Microsoft Azure Service Fabric</div>
+                                <div class="panel-body">
+                                    <a href="https://www.youtube.com/channel/UC0nFiDDfBO8yhmGV0kgPiNw">
+                                        <img src="img/asf_logo.jpg" alt="Lights" style="width:100%">
+                                    </a>
                                 </div>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="col-md-3">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">Microsoft Developer</div>
-                            <div class="panel-body">
-                                <a href="https://www.youtube.com/channel/UCsMica-v34Irf9KVTh6xx-g">
-                                    <img src="img/microsoft_logo.jpg" alt="Lights" style="width:100%">
-                                </a>
-                            </div>
-                            <div class="panel-footer">
-                                <div class="dropdown">
-                                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" style="width:100%">
-                                        Videos
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://www.youtube.com/watch?v=OgrIw1hVTxs&index=1&list=PLlrxD0HtieHh73JryJJ-GWcUtrqpcg2Pb">Alex Wun: The Cluster Manager</a></li>
-                                        <li><a href="https://www.youtube.com/watch?v=vM5x9kk6ZVY&index=2&list=PLlrxD0HtieHh73JryJJ-GWcUtrqpcg2Pb">Mansoor Mohsin: Inside the Failover Manager</a></li>
-                                        <li><a href="https://www.youtube.com/watch?v=BvIWoMpj4vI&index=3&list=PLlrxD0HtieHh73JryJJ-GWcUtrqpcg2Pb">Aprameya Rao: Inside Service Fabric Reconfiguration</a></li>
-                                    </ul>
+                                <div class="panel-footer">
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" style="width:100%">
+                                            Videos
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="https://www.youtube.com/watch?v=K32KfaGx500">Community Q&A #1 </a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=xGSjyDmeue8">Community Q&A #2</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=dU4KGvDu7F4">Community Q&A #3</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">Microsoft Azure</div>
-                            <div class="panel-body">
-                                <a href="https://www.youtube.com/user/windowsazure">
-                                    <img src="img/photo.jpg" alt="Lights" style="width:100%">
-                                </a>
-                            </div>
-                            <div class="panel-footer">
-                                <div class="dropdown">
-                                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" style="width:100%">
-                                        Videos
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://www.youtube.com/watch?v=QqmPM8G4cu8">Azure Friday | Azure Service Fabric on Linux</a></li>
-                                        <li><a href="https://www.youtube.com/watch?v=5RYmooIZqS4">Azure Friday | Jenkins CI/CD with Service Fabric</a></li>
-                                        <li><a href="https://www.youtube.com/watch?v=hDtslXl5APw">Building Games with Service Fabric</a></li>
-                                    </ul>
+                        <div class="col-md-3">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">Microsoft Developer</div>
+                                <div class="panel-body">
+                                    <a href="https://www.youtube.com/channel/UCsMica-v34Irf9KVTh6xx-g">
+                                        <img src="img/microsoft_logo.jpg" alt="Lights" style="width:100%">
+                                    </a>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" style="width:100%">
+                                            Videos
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="https://www.youtube.com/watch?v=OgrIw1hVTxs&index=1&list=PLlrxD0HtieHh73JryJJ-GWcUtrqpcg2Pb">Alex Wun: The Cluster Manager</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=vM5x9kk6ZVY&index=2&list=PLlrxD0HtieHh73JryJJ-GWcUtrqpcg2Pb">Mansoor Mohsin: Inside the Failover Manager</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=BvIWoMpj4vI&index=3&list=PLlrxD0HtieHh73JryJJ-GWcUtrqpcg2Pb">Aprameya Rao: Inside Service Fabric Reconfiguration</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">Microsoft Visual Studio</div>
-                            <div class="panel-body">
-                                <a href="https://www.youtube.com/visualstudio">
-                                    <img src="img/vs_logo.jpg" alt="Lights" style="width:100%">
-                                </a>
-                            </div>
-                            <div class="panel-footer">
-                                <div class="dropdown">
-                                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" style="width:100%">
-                                        Videos
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://www.youtube.com/watch?v=1NcWdSn-7aI">Service Fabric Deploying and Managing Applications with Service Fabric</a></li>
-                                        <li><a href="https://www.youtube.com/watch?v=ndEX6BjSwHU">SmartHotel360 - Modernizing Existing Apps with Azure Service Fabric</a></li>
-                                        <li><a href="https://www.youtube.com/watch?v=U0W8Z0bp6aw">Azure: building applications using Azure Service Fabric and ASP.NET Core | E100</a></li>
-                                    </ul>
+                        <div class="col-md-3">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">Microsoft Azure</div>
+                                <div class="panel-body">
+                                    <a href="https://www.youtube.com/user/windowsazure">
+                                        <img src="img/photo.jpg" alt="Lights" style="width:100%">
+                                    </a>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" style="width:100%">
+                                            Videos
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="https://www.youtube.com/watch?v=QqmPM8G4cu8">Azure Friday | Azure Service Fabric on Linux</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=5RYmooIZqS4">Azure Friday | Jenkins CI/CD with Service Fabric</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=hDtslXl5APw">Building Games with Service Fabric</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                        <div class="col-md-3">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">Microsoft Visual Studio</div>
+                                <div class="panel-body">
+                                    <a href="https://www.youtube.com/visualstudio">
+                                        <img src="img/vs_logo.jpg" alt="Lights" style="width:100%">
+                                    </a>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" style="width:100%">
+                                            Videos
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="https://www.youtube.com/watch?v=1NcWdSn-7aI">Service Fabric Deploying and Managing Applications with Service Fabric</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=ndEX6BjSwHU">SmartHotel360 - Modernizing Existing Apps with Azure Service Fabric</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=U0W8Z0bp6aw">Azure: building applications using Azure Service Fabric and ASP.NET Core | E100</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
                 </div>
                 <h4> Microsoft Virtual Academy</h4>
                 <p class="lead">
