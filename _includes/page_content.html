@@ -2,6 +2,7 @@
     <!-- Page Content -->
     {% for post in site.posts reversed %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' and post.title != 'Watch' %}
     <div class="content-section-a">
 
         <div class="container">
@@ -213,7 +214,7 @@
                     </div>
                 </div>
                 <h4> Microsoft Virtual Academy</h4>
-                <p class="lead">Microsoft Virtual Academy videos place emphasis on teaching you about various topics and often don't require extensive prerequisite knowledge. They are a great resource if you are new to
+                <p>Microsoft Virtual Academy videos place emphasis on teaching you about various topics and often don't require any prerequisite knowledge. They are a great resource if you are new to
                 the service or want a refresher. </p>
                 <div class="row">
                     <div class="col-md-3">
@@ -284,9 +285,10 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <p> howdy here.</p>
+                    <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
                 </div>
             </div>
 
