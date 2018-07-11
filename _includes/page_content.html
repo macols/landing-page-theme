@@ -59,17 +59,6 @@
         <!-- /.container -->
     </div>
     <!-- /.content-section-a -->
-    {% else if post.title == 'Try' %}
-    <div class="content-section-c">
-        <div class="container">
-            <div class="row">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">{{ post.title }}</h2>
-            </div>
-        </div>
-    </div>
-    <!-- /.content-section-c -->
     {% else if post.title == 'Watch' %}
     <div class="content-section-b">
         <div class="row">
@@ -288,6 +277,17 @@
         </div>
     </div>
     <!-- /.content-section-b -->
+    {% else if post.title == 'Try' %}
+    <div class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">{{ post.title }}</h2>
+            </div>
+        </div>
+    </div>
+    <!-- /.content-section-c -->
     {% endif %}
     {% endfor %}
 </section>
