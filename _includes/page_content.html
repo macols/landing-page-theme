@@ -59,6 +59,17 @@
         <!-- /.container -->
     </div>
     <!-- /.content-section-a -->
+    {% else if post.title == 'Try' %}
+    <div class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">{{ post.title }}</h2>
+            </div>
+        </div>
+    </div>
+    <!-- /.content-section-c -->
     {% else if post.title == 'Watch' %}
     <div class="content-section-b">
         <div class="row">
@@ -66,7 +77,7 @@
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">{{ post.title }}</h2>
-                <p class="lead"> Here are a few highlighted videos to get you started.</p> 
+                <p class="lead"> Here are a few highlighted videos to get you started.</p>
             </div>
         </div>
 
@@ -116,8 +127,10 @@
             <div class="container">
                 <br />
                 <h4>Youtube Channels</h4>
-                <p class="lead"> The following YouTube channels have great Service Fabric content targeted  for users ranging from beginners to advanced. These videos tend to be
-                topic driven and will dive deeeply into the selected subject. Explore a few of our selected videos before heading to the channels for even more content.</p>
+                <p class="lead">
+                    The following YouTube channels have great Service Fabric content targeted  for users ranging from beginners to advanced. These videos tend to be
+                    topic driven and will dive deeeply into the selected subject. Explore a few of our selected videos before heading to the channels for even more content.
+                </p>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="panel panel-info">
@@ -213,8 +226,10 @@
                     </div>
                 </div>
                 <h4> Microsoft Virtual Academy</h4>
-                <p class="lead">Microsoft Virtual Academy videos place emphasis on teaching you about various topics and often don't require extensive prerequisite knowledge. They are a great resource if you are new to
-                the service or want a refresher. </p>
+                <p class="lead">
+                    Microsoft Virtual Academy videos place emphasis on teaching you about various topics and often don't require extensive prerequisite knowledge. They are a great resource if you are new to
+                    the service or want a refresher.
+                </p>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="panel panel-info">
@@ -273,17 +288,6 @@
         </div>
     </div>
     <!-- /.content-section-b -->
-    {% else if post.title == 'Try' %}
-    <div class="content-section-c">
-        <div class="container">
-            <div class="row">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">{{ post.title }}</h2>           
-            </div>
-        </div>
-    </div>
-    <!-- /.content-section-c -->
     {% endif %}
     {% endfor %}
 </section>
