@@ -2,7 +2,7 @@
     <!-- Page Content -->
     {% for post in site.posts reversed %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' and post.title != 'Watch' %}
+    {% if post.title == 'Read' %}
     <div class="content-section-a">
 
         <div class="container">
