@@ -26,7 +26,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4">
                         <div class="panel panel-info">
                             <div class="panel-heading">
@@ -61,14 +61,14 @@
     </div>
     <!-- /.content-section-a -->
     {% else if post.title == 'Watch' %}
-    <div class="content-section-b">    
+    <div class="content-section-b">
         <div class="row">
             <div class="container">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">{{ post.title }}</h2>
                 <p class="lead"> Here are a few highlighted videos to get you started.</p>
-            </div> 
+            </div>
         </div>
         <div class="row">
             <div class="container">
@@ -115,9 +115,8 @@
         </div>
     </div>
     <!-- https://youtu.be/D-1mfk3Vv-4 link -->
-
     <!-- /.content-section-b -->
-    {% else %}
+    {% else if post.title == 'Try' %}
 
     <div class="content-section-c">
 
