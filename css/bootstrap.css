@@ -2744,7 +2744,6 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-  white-space: normal;
 }
 .btn:focus,
 .btn:active:focus,
@@ -3289,6 +3288,11 @@ tbody.collapse.in {
 }
 .btn-toolbar {
   margin-left: -5px;
+}
+.btn-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btn-toolbar .btn-group,
 .btn-toolbar .input-group {
