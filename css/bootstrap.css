@@ -6241,4 +6241,9 @@ button.close {
         float: left;
     }
 }
+.dropdown-menu {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 /*# sourceMappingURL=bootstrap.css.map */
