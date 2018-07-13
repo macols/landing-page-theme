@@ -24,11 +24,11 @@ permalink: pretty
 # ----------------------- #
 
 social:
-  - title: twitter
-    url: https://twitter.com/servicefabric
   - title: github
     url: https://github.com/Microsoft/service-fabric
   - title: linkedin
     url: https://www.linkedin.com/groups/8526708/profile
   - title: stack
     url: https://stackoverflow.com/questions/tagged/azure-service-fabric
+  - title: calendar
+    url: https://twitter.com/servicefabric
