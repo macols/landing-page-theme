@@ -15,55 +15,26 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <div class="col-sm-3 col-md-3 pull-right">
                 <!-- Not the best way of doing this . . . but works for now -->
-                <div id="search_bar">
-                    <script>
-                        (function () {
-                            var cx = '016330510565665665086:jeyr3jwnc-q';
-                            var gcse = document.createElement('script');
-                            gcse.type = 'text/javascript';
-                            gcse.async = true;
-                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                            var s = document.getElementsByTagName('script')[0];
-                            s.parentNode.insertBefore(gcse, s);
-                        })();
-                    </script>
-                    <style type="text/css">
-                        .gsc-result-info {
-                            text-align: left;
-                            color: #999;
-                            font-size: 12px;
-                            padding-left: 8px;
-                            margin: 10px 0 10px 0;
-                        }
+                <div class="row">
+                    <div id="search_bar">
+                        <script>
+                            (function () {
+                                var cx = '016330510565665665086:jeyr3jwnc-q';
+                                var gcse = document.createElement('script');
+                                gcse.type = 'text/javascript';
+                                gcse.async = true;
+                                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                var s = document.getElementsByTagName('script')[0];
+                                s.parentNode.insertBefore(gcse, s);
+                            })();
+                        </script>
+                        <gcse:search></gcse:search>
+                    </div>
+                </div>
+                <div class="row" style="outline-color:red">
 
-                        .gs-result .gs-title, .gs-result .gs-title * {
-                            color: #3083A3;
-                            text-decoration: none;
-                            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-                        }
-
-                        .gs-result a.gs-visibleUrl, .gs-result .gs-visibleUrl {
-                            color: #0052FF;
-                            text-decoration: none;
-                        }
-
-                        .gs-result .gs-snippet {
-                            font: 12px Tahoma, Geneva, sans-serif;
-                        }
-
-                        .gsc-results .gsc-cursor-box .gsc-cursor-page {
-                            cursor: pointer;
-                            color: #07AD00;
-                            text-decoration: none;
-                            margin-right: 5px;
-                            display: inline;
-                            border: 1px solid #DDD;
-                            padding: 2px 5px 2px 5px;
-                        }
-                    </style>
-                    <gcse:search></gcse:search>
-                </div> 
-<!--
+                </div>
+<!-- OG Search bar
     <form class="navbar-form" role="search" method="get" action="{{ site.baseurl }}//search/">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
