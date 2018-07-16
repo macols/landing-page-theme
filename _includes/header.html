@@ -15,23 +15,21 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <div class="col-sm-3 col-md-3 pull-right">
                 <!-- Not the best way of doing this . . . but works for now -->
-                <div class="row">
-                    <div id="search_bar">
-                        <script>
-                            (function () {
-                                var cx = '016330510565665665086:jeyr3jwnc-q';
-                                var gcse = document.createElement('script');
-                                gcse.type = 'text/javascript';
-                                gcse.async = true;
-                                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                                var s = document.getElementsByTagName('script')[0];
-                                s.parentNode.insertBefore(gcse, s);
-                            })();
-                        </script>
-                        <gcse:searchbox></gcse:searchbox>
-                    </div>
+                <div id="search_bar">
+                    <script>
+                        (function () {
+                            var cx = '016330510565665665086:jeyr3jwnc-q';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                        })();
+                    </script>
+                    <gcse:searchbox></gcse:searchbox>
                 </div>
-                <div class="row" style="outline-color:red">
+                <div class="row" style="height:200px">
                     <gcse:searchresults></gcse:searchresults>
                 </div>
 <!-- OG Search bar
