@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\css",
+    "\\js",
     "\\_includes",
     "\\_layouts",
     "\\_posts"
   ],
-  "SelectedNode": "\\_includes\\page_content2.html",
+  "SelectedNode": "\\_config.yml",
   "PreviewInSolutionExplorer": false
 }
