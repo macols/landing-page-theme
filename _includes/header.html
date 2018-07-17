@@ -14,17 +14,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <!-- <div class="col-sm-3 col-md-3 pull-right">
-         <!-- Not the best way of doing this . . . but works for now
-         <form class="navbar-form" role="search" method="get" action="{{ site.baseurl }}//search/">
-             <div class="input-group">
-                 <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                 <div class="input-group-btn">
-                     <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                 </div>
-             </div>
-         </form>
+               <!-- Not the best way of doing this . . . but works for now
+               <form class="navbar-form" role="search" method="get" action="{{ site.baseurl }}//search/">
+                   <div class="input-group">
+                       <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                       <div class="input-group-btn">
+                           <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                       </div>
+                   </div>
+               </form>
 
-      </div> -->
+            </div> -->
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a class="page-scroll" href="#getStarted">Get Started</a>
@@ -36,7 +36,7 @@
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
                         <span id="searchGlyph" class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
                     </a>
                 </li>
@@ -44,36 +44,56 @@
         </div>
         <!-- /.navbar-collapse -->
 
-        </div>
+    </div>
     <!-- /.container -->
 </nav>
+<!-- Search Modal -->
+<div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Search Cambia Research</h4>
+            </div>
+            <div class="modal-body">
+                <!-- Add the modal body here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 <section id="home">
-<!-- Header -->
-	<div class="intro-header">
+    <!-- Header -->
+    <div class="intro-header">
 
-		<div class="container">
+        <div class="container">
 
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="intro-message">
-						<h1>{{ page.title }}</h1>
-						<h3>{{ page.subTitle }}</h3>
-						<hr class="intro-divider">
-						<ul class="list-inline intro-social-buttons">
-							{% for social in site.social %}
-							<li>
-								<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
-							</li>
-							{% endfor %}
-						</ul>
-					</div>
-				</div>
-			</div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>{{ page.title }}</h1>
+                        <h3>{{ page.subTitle }}</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            {% for social in site.social %}
+                            <li>
+                                <a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-		</div>
-		<!-- /.container -->
+        </div>
+        <!-- /.container -->
 
-	</div>
-	<!-- /.intro-header -->
+    </div>
+    <!-- /.intro-header -->
 </section>
