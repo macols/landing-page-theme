@@ -32,3 +32,8 @@ social:
     url: https://stackoverflow.com/questions/tagged/azure-service-fabric
   - title: calendar
     url: https://bing.com
+
+# ----------------------- #
+#   Google Analytics      #
+# ----------------------- #
+google_analytics: UA-122863494-2
