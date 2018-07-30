@@ -1,10 +1,10 @@
-# frozen_string_literal: true
+source 'https://rubygems.org'
 
-source "https://rubygems.org"
+gem 'jekyll', '3.8.3'
 
-git_source(:github) {|macols.github.io| "https://github.com/#{macols.github.io}" }
-
-group: jekyll_plugins do
+#check versioning
+group :jekyll_plugins do
 	gem 'jekyll-seo-tag'
+	gem 'jekyll-sitemap'
 end
-# gem "rails"
+
