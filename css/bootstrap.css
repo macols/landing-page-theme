@@ -5791,6 +5791,10 @@ button.close {
 .carousel-inner img {
     margin: auto; 
 }
+.carousel-inner > .item > img {
+    width: 250px;
+    height: 250px;
+}
 .carousel-control:hover,
 .carousel-control:focus {
   color: #fff;
