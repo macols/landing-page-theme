@@ -5788,6 +5788,9 @@ button.close {
 .carousel-control.right, .carousel-control.left {
     background-image:none;
 }
+.carousel-inner img {
+    margin: auto; 
+}
 .carousel-control:hover,
 .carousel-control:focus {
   color: #fff;
