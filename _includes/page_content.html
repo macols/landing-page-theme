@@ -308,7 +308,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Quickstarts</h4>
+                                            <h4 class="modal-title">Tutorials</h4>
                                         </div>
                                         <div class="modal-body" style="text-align:center">
                                             <!---Row 1-->
@@ -369,10 +369,71 @@
                             <h2 class="panel-title">Samples</h2>
                         </div>
                         <div class="panel-body lead">
-                                Samples tend to be repositories that you can download and clone. They will allow you to expore a specific concept
-                                in action by observing someone else's code. <br />
+                            Samples tend to be repositories that you can download and clone. They will allow you to expore a specific concept
+                            in action by observing someone else's code. <br />
                             <img src="img/sample_icon.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
-                            <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-dotnet-app" class="btn btn-info btn-md">Go</a>
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal3">
+                                Go
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal3" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Samples</h4>
+                                        </div>
+                                        <div class="modal-body" style="text-align:center">
+                                            <!---Row 1-->
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-standalone-cluster-configuration/">
+                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                    </a>
+                                                    <p>Service Fabric Standalone Cluster Configuration</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-java-getting-started/">
+                                                        <img src="img/java_logo.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                    </a>
+                                                    <p>Getting Started with Service Fabric with Java</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-containers/">
+                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                    </a>
+                                                    <p>Service Fabric Container Samples</p>
+                                                </div>
+                                            </div>
+                                            <!-- Row 2 -->
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-container-images">
+                                                        <img src="img/linux_icon.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                    </a>
+                                                    <p>Create a Linux container app</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-reliable-services">
+                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                    </a>
+                                                    <p>Create and manage a cluster</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-standalone-create-infrastructure">
+                                                        <img src="img/aws_logo.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                    </a>
+                                                    <p>Create a standalone cluster on AWS</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
