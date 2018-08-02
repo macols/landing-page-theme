@@ -493,9 +493,9 @@
 
                                             <!-- Script -->
                                             <script>
-                                               alert("hello, world!") /*
                                                filterSelection("all")
                                                 function filterSelection(c) {
+                                                    alert("method1")
                                                     var x, i;
                                                     x = document.getElementsByClassName("filterDiv");
                                                     if (c == "all") c = "";
@@ -506,6 +506,7 @@
                                                 }
 
                                                 function w3AddClass(element, name) {
+                                                    alert("method2")
                                                     var i, arr1, arr2;
                                                     arr1 = element.className.split(" ");
                                                     arr2 = name.split(" ");
@@ -515,6 +516,7 @@
                                                 }
 
                                                 function w3RemoveClass(element, name) {
+                                                    alert("method3")
                                                     var i, arr1, arr2;
                                                     arr1 = element.className.split(" ");
                                                     arr2 = name.split(" ");
@@ -535,7 +537,7 @@
                                                         current[0].className = current[0].className.replace(" active", "");
                                                         this.className += " active";
                                                     });
-                                                } */
+                                                } 
                                             </script> 
                                         </div>
                                         <div class="modal-footer">
