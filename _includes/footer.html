@@ -20,11 +20,29 @@
                         <a href="#whatsnew">What's New</a>
                     </li>
                     <!-- <li class="footer-menu-divider">&sdot;</li>
-     <li>
-         <a href="#contact">Contact</a>
-     </li> -->
+        <li>
+            <a href="#contact">Contact</a>
+        </li> -->
                 </ul>
-              <p class="copyright text-muted small">Submit your code!</p>  
+                <p class="copyright text-muted small" data-toggle="modal" data-target="#myModal4">Submit your code!</p>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Tutorials</h4>
+                            </div>
+                            <div class="modal-body" style="text-align:center">
+                                <p> Send us an email at 123@microsoft.com</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
             <div class="col-md-4">
                 {{ site.credits }}
