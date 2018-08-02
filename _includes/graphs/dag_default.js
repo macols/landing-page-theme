@@ -1,4 +1,4 @@
-filterSelection("all")
+/*filterSelection("all")
 function filterSelection(c) {
     var x, i;
     x = document.getElementsByClassName("filterDiv");
@@ -39,4 +39,7 @@ for (var i = 0; i < btns.length; i++) {
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
     });
+}*/
+$(document).ready(function () {
+    alert("hi");
 }
