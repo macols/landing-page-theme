@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\css",
+    "\\font-awesome-4.1.0\\css",
+    "\\js",
     "\\_includes",
+    "\\_includes\\graphs",
     "\\_layouts"
   ],
   "SelectedNode": "\\_includes\\getStarted.html",
