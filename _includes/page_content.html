@@ -1,19 +1,13 @@
 <section id="resources">
     <!-- Page Content -->
-    {% for post in site.posts reversed %}
-    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if post.title == 'Read' %}
+     <!-- Read Section-->
      <div class="content-section-a">
-
          <div class="container">
-
-             <div class="row">
-                 <hr class="section-heading-spacer">
-                 <div class="clearfix"></div>
-                 <h2 class="section-heading">{{ post.title }}</h2>
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Read</h2>
 
                  <div class="row">
-
                      <div class="col-lg-4">
                          <div class="panel panel-info">
                              <div class="panel-heading">
@@ -21,12 +15,11 @@
                              </div>
                              <div class="panel-body lead">
                                  Documents with content ranging from terminology to architecture written by Service Fabric team-members. <br />
-                                 <img src="img/book_icon.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
+                                 <img src="img/book_icon.png" class="center-block read-icon">
                                  <a href="https://docs.microsoft.com/en-us/azure/service-fabric/" class="btn btn-info btn-md">Go</a>
                              </div>
                          </div>
                      </div>
-
                      <div class="col-lg-4">
                          <div class="panel panel-info">
                              <div class="panel-heading">
@@ -34,12 +27,11 @@
                              </div>
                              <div class="panel-body lead">
                                  Keep up to date with the latest Service Fabric news with posts written by the team. <br />
-                                 <img src="img/blog_icon3.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
+                                 <img src="img/blog_icon3.png" class="center-block read-icon">
                                  <a href="https://blogs.msdn.microsoft.com/azureservicefabric/?orderby=date" class="btn btn-info btn-md">Go</a>
                              </div>
                          </div>
                      </div>
-
                      <div class="col-lg-4">
                          <div class="panel panel-info">
                              <div class="panel-heading">
@@ -47,26 +39,24 @@
                              </div>
                              <div class="panel-body lead">
                                  Check out Service Fabric's roadmap to get updates on where our service is heading. <br />
-                                 <img src="img/map_icon.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
+                                 <img src="img/map_icon.png" class="center-block read-icon">
                                  <a href="https://azure.microsoft.com/en-us/roadmap/?query=service+fabric/" class="btn btn-info btn-md">Go</a>
                              </div>
                          </div>
                      </div>
 
                  </div>
-             </div>
          </div>
     <!-- /.container -->
     </div>
     <!-- /.content-section-a -->
-    {% elsif post.title == 'Watch' %}
      <div class="content-section-b">
          <!-- Header-->
          <div class="row">
              <div class="container">
                  <hr class="section-heading-spacer">
                  <div class="clearfix"></div>
-                 <h2 class="section-heading">{{ post.title }}</h2>
+                 <h2 class="section-heading">Watch</h2>
                  <!--<p class="lead"> Here are a few highlighted videos to get you started.</p>-->
              
              <!--Video Panels -->
@@ -210,13 +200,12 @@
          </div>
      </div>
     <!-- /.content-section-b -->
-    {% else %}
-    <div class="content-section-c" style="background-color:whitesmoke; padding-top:50px; padding-bottom:50px">
+    <div class="content-section-c">
         <div class="container">
             <div class="row">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">{{ post.title }}</h2>
+                <h2 class="section-heading">Try</h2>
             </div>
             <div class="row">
                 <div class="container">
@@ -228,8 +217,7 @@
                         <div class="panel-body lead">
                             Quickstarts are simple, minimal input walkthroughs that aim to teach you a specific task without
                             forcing you to write any code on your own. They should take 5 minutes or less! <br />
-                            <img src="img/rocket_icon.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
-                            <!-- <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet" class="btn btn-info btn-md">Go</a> -->
+                            <img src="img/rocket_icon.png" class="center-block read-icon">
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">
                                 Go
                             </button>
@@ -242,8 +230,8 @@
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             <h4 class="modal-title">Quickstarts</h4>
                                         </div>
-                                        <div class="modal-body" style="text-align:center">
-                                            <div id="myBtnContainer" class="row" style="text-align: left !important; margin-left:5px">
+                                        <div class="modal-body feature-cont">
+                                            <div id="myBtnContainer" class="row btnContainer">
                                                 <button class="btn active btn-info" onclick="filterSelection('all')"> Show all</button>
                                                 <button class="btn btn-info" onclick="filterSelection('Java')"> Java</button>
                                                 <button class="btn btn-info" onclick="filterSelection('.NET')"> .NET</button>
@@ -255,19 +243,19 @@
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet">
-                                                        <img src="img/net_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/net_logo.jpg" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Create a .NET Application</p>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers-linux">
-                                                        <img src="img/linux_icon.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/linux_icon.png" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Deploy a Linux Container Application</p>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers">
-                                                        <img src="img/windows_logo.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/windows_logo.png" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Deploy a Windows Container Application</p>
                                                 </div>
@@ -276,13 +264,13 @@
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-spring-boot">
-                                                        <img src="img/spring_boot_logo.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/spring_boot_logo.png" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Deploy a Spring Boot Application</p>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-reliable-services">
-                                                        <img src="img/rocket_icon.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/rocket_icon.png" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Deploy a Reliable Services Application</p>
                                                 </div>
@@ -305,7 +293,7 @@
                         <div class="panel-body lead">
                             Tutorials are meant to give a more in-depth walk through. They provide you with tools as well as explanations
                             for each step until you have accomplished your goal. <br />
-                            <img src="img/tutorial_icon.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
+                            <img src="img/tutorial_icon.png" class="center-block read-icon">
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal2">
                                 Go
                             </button>
@@ -318,8 +306,8 @@
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             <h4 class="modal-title">Tutorials</h4>
                                         </div>
-                                        <div class="modal-body" style="text-align:center">
-                                            <div id="myBtnContainer" class="row" style="text-align: left !important; margin-left:5px">
+                                        <div class="modal-body feature-cont">
+                                            <div id="myBtnContainer" class="row btnContainer">
                                                 <button class="btn active btn-info" onclick="filterSelection('all')"> Show all</button>
                                                 <button class="btn btn-info" onclick="filterSelection('Java')"> Java</button>
                                                 <button class="btn btn-info" onclick="filterSelection('.NET')"> .NET</button>
@@ -331,19 +319,19 @@
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-dotnet-app">
-                                                        <img src="img/net_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/net_logo.jpg" class="img-circle try-item" />
                                                     </a>
                                                     <p>Deploy a .NET app</p>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-java-app">
-                                                        <img src="img/linux_icon.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/linux_icon.png" class="img-circle try-item" />
                                                     </a>
                                                     <p>Deploy a Java app</p>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-host-app-in-a-container">
-                                                        <img src="img/java_icon.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/java_icon.png" class="img-circle try-item" />
                                                     </a>
                                                     <p>Containerize an existing .NET app</p>
                                                 </div>
@@ -352,19 +340,19 @@
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-container-images">
-                                                        <img src="img/linux_icon.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/linux_icon.png" class="img-circle try-item" />
                                                     </a>
                                                     <p>Create a Linux container app</p>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-reliable-services">
-                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/asf_logo.jpg" class="img-circle try-item" />
                                                     </a>
                                                     <p>Create and manage a cluster</p>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-standalone-create-infrastructure">
-                                                        <img src="img/aws_logo.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/aws_logo.png" class="img-circle try-item" />
                                                     </a>
                                                     <p>Create a standalone cluster on AWS</p>
                                                 </div>
@@ -387,7 +375,7 @@
                         <div class="panel-body lead">
                             Samples tend to be repositories that you can download and clone. They will allow you to expore a specific concept
                             in action by observing someone else's code. <br />
-                            <img src="img/sample_icon.png" class="center-block" style="width: 75px; height: 75px; margin-top: 5px">
+                            <img src="img/sample_icon.png" class="center-block read-icon">
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal3">
                                 Go
                             </button>
@@ -400,9 +388,9 @@
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             <h4 class="modal-title">Samples</h4>
                                         </div>
-                                        <div class="modal-body" style="text-align:center">
+                                        <div class="modal-body feature-cont">
                                             <!-- Filter Buttons -->
-                                            <div id="myBtnContainer" class="row" style="text-align: left !important; margin-left:5px">
+                                            <div id="myBtnContainer" class="row btnContainer">
                                                 <button class="btn active btn-info" onclick="filterSelection('all')"> Show all</button>
                                                 <button class="btn btn-info" onclick="filterSelection('Java')"> Java</button>
                                                 <button class="btn btn-info" onclick="filterSelection('.NET')"> .NET</button>
@@ -415,7 +403,7 @@
                                                 <div class="filterDiv standalone">
                                                     <div class="col-md-4">
                                                         <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-standalone-cluster-configuration/">
-                                                            <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item"/>
                                                         </a>
                                                         <p>Service Fabric Standalone Cluster Configuration</p>
                                                     </div>
@@ -423,7 +411,7 @@
                                                 <div class="filterDiv java">
                                                     <div class="col-md-4">
                                                         <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-java-getting-started/">
-                                                            <img src="img/linux_icon.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                            <img src="img/linux_icon.png" class="img-circle try-item"/>
                                                         </a>
                                                         <p>Getting Started with Service Fabric with Java</p>
                                                     </div>
@@ -431,7 +419,7 @@
                                                 <div class="filterDiv containerz">
                                                     <div class="col-md-4 container">
                                                         <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-containers/">
-                                                            <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item"/>
                                                         </a>
                                                         <p>Service Fabric Container Samples</p>
                                                     </div>
@@ -441,19 +429,19 @@
                                             <div class="row">
                                                 <div class="col-md-4 net">
                                                     <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-core-getting-started/">
-                                                        <img src="img/java_icon.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/java_icon.png" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Getting Started with Service Fabric with .NET Core</p>
                                                 </div>
                                                 <div class="col-md-4 begin">
                                                     <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-getting-started/">
-                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/asf_logo.jpg" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Service Fabric Getting Started</p>
                                                 </div>
                                                 <div class="col-md-4 watchdog">
                                                     <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-watchdog-service/">
-                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/asf_logo.jpg" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Service Fabric Watchdog Sample</p>
                                                 </div>
@@ -462,19 +450,19 @@
                                             <div class="row">
                                                 <div class="col-md-4 webapp">
                                                     <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-web-reference-app/">
-                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/asf_logo.jpg" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Service Fabric Web Reference Application</p>
                                                 </div>
                                                 <div class="col-md-4 iot">
                                                     <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-iot/">
-                                                        <img src="img/iot_logo.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/iot_logo.png" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Service Fabric IoT Sample</p>
                                                 </div>
                                                 <div class="col-md-4 api">
                                                     <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-api-management/">
-                                                        <img src="img/api_management.png" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/api_management.png" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Service Fabric and Azure API Management</p>
                                                 </div>
@@ -483,25 +471,25 @@
                                             <div class="row">
                                                 <div class="col-md-4 health">
                                                     <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-data-aggregation/">
-                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/asf_logo.jpg" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Service Fabric Data Aggregation Sample (aka HealthMetrics)</p>
                                                 </div>
                                                 <div class="col-md-4 performance">
                                                     <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-performance/">
-                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/asf_logo.jpg" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Service Fabric Performance and Scalability samples</p>
                                                 </div>
                                                 <div class="col-md-4 party">
                                                     <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-management-party-cluster/">
-                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/asf_logo.jpg" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Azure Service Fabric Party Cluster</p>
                                                 </div>
                                                 <div class="col-md-4 backend">
                                                     <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-data-streaming-websockets/">
-                                                        <img src="img/asf_logo.jpg" class="img-circle" width="100" height="100" style="border:5px solid deepskyblue" />
+                                                        <img src="img/asf_logo.jpg" class="img-circle try-item"/>
                                                     </a>
                                                     <p>Service Fabric Predictive Backend</p>
                                                 </div>
@@ -521,6 +509,4 @@
         </div>
     </div> 
     <!-- /.content-section-c -->
-    {% endif %}
-    {% endfor %}
 </section>
