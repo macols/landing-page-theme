@@ -1,5 +1,6 @@
-<script>
-    filterSelection("all")
+console.log("We got JS now");
+alert("hello world")
+/*filterSelection("all")
 function filterSelection(c) {
   var x, i;
     x = document.getElementsByClassName("filterDiv");
@@ -40,5 +41,4 @@ for (var i = 0; i < btns.length; i++) {
             current[0].className = current[0].className.replace(" active", "");
             this.className += " active";
         });
-    }
-</script>
+    }*/

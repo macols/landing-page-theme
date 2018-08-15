@@ -1,8 +1,8 @@
 # Service Fabric Launch Point
 
-This webpage serves as a learning tool for [Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/): a distributed
+This webpage serves as an open-source learning tool for [Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/): a distributed
 systems platform that makes it easy to package, deploy and manage scalable and reliable microservices as well as containers. Materials
-are broken down into three main categories: Read, Watch, Try
+are broken down into three main categories: Read, Watch, Try.
 
 ### Read
 Create a solid foundation by hitting the books with Service Fabric's official documentation, team blog, and roadmap. 

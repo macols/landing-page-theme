@@ -229,48 +229,93 @@
                                         <div class="modal-body feature-cont">
                                             <div id="myBtnContainer" class="row btnContainer">
                                                 <button class="btn active btn-info" onclick="filterSelection('all')"> Show all</button>
-                                                <button class="btn btn-info" onclick="filterSelection('Java')"> Java</button>
-                                                <button class="btn btn-info" onclick="filterSelection('.NET')"> .NET</button>
-                                                <button class="btn btn-info" onclick="filterSelection('Health')"> Health</button>
-                                                <button class="btn btn-info" onclick="filterSelection('Linux')"> Linux</button>
+                                                <button class="btn btn-info" onclick="filterSelection('colors')"> Java</button>
+                                                <button class="btn btn-info" onclick="filterSelection('cars')"> .NET</button>
+                                                <button class="btn btn-info" onclick="filterSelection('fruits')"> Health</button>
+                                                <button class="btn btn-info" onclick="filterSelection('animals')"> Linux</button>
                                             </div>
-                                            <br/>
-                                            <!---Row 1-->
-                                            <div class="row">
-                                                <div class="col-md-4">
+                                            <br />
+                                            <!---Row 1 -->
+                                            <div class="row"> 
+                                                <div class="col-md-4 filterDiv">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet">
-                                                        <img src="img/net_logo.jpg" class="img-circle try-item"/>
+                                                        <img src="img/net_logo.jpg" class="img-circle try-item" />
                                                     </a>
                                                     <p>Create a .NET Application</p>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 filterDiv">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers-linux">
-                                                        <img src="img/linux_icon.png" class="img-circle try-item"/>
+                                                        <img src="img/linux_icon.png" class="img-circle try-item" />
                                                     </a>
                                                     <p>Deploy a Linux Container Application</p>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 filterDiv">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers">
-                                                        <img src="img/windows_logo.png" class="img-circle try-item"/>
+                                                        <img src="img/windows_logo.png" class="img-circle try-item" />
                                                     </a>
                                                     <p>Deploy a Windows Container Application</p>
                                                 </div>
                                             </div>
                                             <!-- Row 2 -->
                                             <div class="row">
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 filterDiv">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-spring-boot">
-                                                        <img src="img/spring_boot_logo.png" class="img-circle try-item"/>
+                                                        <img src="img/spring_boot_logo.png" class="img-circle try-item" />
                                                     </a>
                                                     <p>Deploy a Spring Boot Application</p>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 filterDiv">
                                                     <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-reliable-services">
-                                                        <img src="img/rocket_icon.png" class="img-circle try-item"/>
+                                                        <img src="img/rocket_icon.png" class="img-circle try-item" />
                                                     </a>
                                                     <p>Deploy a Reliable Services Application</p>
                                                 </div>
-                                            </div>
+                                            </div> 
+                                           
+                                            <script>
+                                                filterSelection("all")
+                                                function filterSelection(c) {
+                                                    var x, i;
+                                                    x = document.getElementsByClassName("filterDiv");
+                                                    if (c == "all") c = "";
+                                                    for (i = 0; i < x.length; i++) {
+                                                        w3RemoveClass(x[i], "show");
+                                                        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                                                    }
+                                                }
+
+                                                function w3AddClass(element, name) {
+                                                    var i, arr1, arr2;
+                                                    arr1 = element.className.split(" ");
+                                                    arr2 = name.split(" ");
+                                                    for (i = 0; i < arr2.length; i++) {
+                                                        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                                                    }
+                                                }
+
+                                                function w3RemoveClass(element, name) {
+                                                    var i, arr1, arr2;
+                                                    arr1 = element.className.split(" ");
+                                                    arr2 = name.split(" ");
+                                                    for (i = 0; i < arr2.length; i++) {
+                                                        while (arr1.indexOf(arr2[i]) > -1) {
+                                                            arr1.splice(arr1.indexOf(arr2[i]), 1);
+                                                        }
+                                                    }
+                                                    element.className = arr1.join(" ");
+                                                }
+
+                                                // Add active class to the current button (highlight it)
+                                                var btnContainer = document.getElementById("myBtnContainer");
+                                                var btns = btnContainer.getElementsByClassName("btn");
+                                                for (var i = 0; i < btns.length; i++) {
+                                                    btns[i].addEventListener("click", function () {
+                                                        var current = document.getElementsByClassName("active");
+                                                        current[0].className = current[0].className.replace(" active", "");
+                                                        this.className += " active";
+                                                    });
+                                                }
+                                            </script>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
