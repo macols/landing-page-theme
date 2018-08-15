@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\css",
-    "\\js",
-    "\\_includes",
-    "\\_includes\\graphs",
-    "\\_layouts"
+    ""
   ],
-  "SelectedNode": "\\_includes\\contact.html",
+  "SelectedNode": "\\docker-compose.yml",
   "PreviewInSolutionExplorer": false
 }
