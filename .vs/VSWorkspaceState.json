@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css",
-    "\\js",
     "\\_includes",
     "\\_layouts"
   ],
-  "SelectedNode": "\\js\\landing-page.js",
+  "SelectedNode": "\\Dockerfile",
   "PreviewInSolutionExplorer": false
 }
