@@ -22,9 +22,6 @@ plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
 - jekyll-github-metadata
-#- jekyll-mentions
-#- jekyll-redirect-from
-#- jemoji 
 
 twitter:
     username: servicefabric
@@ -51,5 +48,5 @@ social:
 # ----------------------- #
 #   Google Analytics      #
 # ----------------------- #
-
-google_analytics: UA-122863494-2
+google_analytics: UA-124284433-1
+#google_analytics: UA-122863494-2
