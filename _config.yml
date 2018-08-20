@@ -21,10 +21,9 @@ permalink: pretty
 plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
-#- jekyll-github-metadata
+- jekyll-github-metadata
 #- jekyll-mentions
 #- jekyll-redirect-from
-#- jekyll-sitemap
 #- jemoji 
 
 twitter:
