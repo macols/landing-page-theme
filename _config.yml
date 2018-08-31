@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: https://macols.github.io
-title: Service Fabric Launch Point
+title: Service Fabric
 email: t-maols@microsoft.com
 author: MacKenzie Olson
 description: Centralized source for all resources (from Service Fabric developers and users alike) in one convenient location.
@@ -27,7 +27,7 @@ twitter:
     username: servicefabric
     card: summary
 
-logo: /img/test.jpg
+logo: /img/bluelogo.png
 
 # ----------------------- #
 #   3rd Party Settings    #
@@ -43,7 +43,7 @@ social:
   - title: twitter
     url: https://twitter.com/servicefabric?lang=en
   - title: calendar
-    url: https://google.com
+    url: https://msit.powerbi.com/view?r=eyJrIjoiMGEwMWQ0NTItMTQ0Zi00Y2JlLThmMWEtNTc4ZjEzNjJhZDY5IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9
 
 # ----------------------- #
 #   Google Analytics      #

@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\_includes",
-    "\\_layouts"
+    "\\img"
   ],
-  "SelectedNode": "\\Dockerfile",
+  "SelectedNode": "\\img\\bluelogo.png",
   "PreviewInSolutionExplorer": false
 }

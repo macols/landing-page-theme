@@ -1,0 +1,350 @@
+﻿<section id="resources">
+    <div class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Try</h2>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="col-lg-4">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Quickstarts</h2>
+                            </div>
+                            <!-- Quickstarts Panel-->
+                            <div class="panel-body lead">
+                                Quickstarts are simple, minimal input walkthroughs that aim to teach you a specific task without
+                                forcing you to write any code on your own. They should take 5 minutes or less! <br />
+                                <img src="img/rocket_icon.png" class="center-block read-icon">
+                                <button type="button" onclick="filterSelection('all')" class="btn btn-info" data-toggle="modal" data-target="#myModal1">
+                                    Go
+                                </button>
+                                <!-- Quickstarts Modal -->
+                                <div class="modal fade" id="myModal1" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Quickstarts</h4>
+                                            </div>
+                                            <div class="modal-body feature-cont">
+                                                <div id="myBtnContainer" class="row btnContainer">
+                                                    <button class="btn active btn-info" onclick="filterSelection('all')"> Show all</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('java')"> Java</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('net')"> .NET</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('health')"> Health</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('linux')"> Linux</button>
+                                                </div>
+                                                <br />
+                                                <!---Row 1 -->
+                                                <div class="row">
+                                                    <div class="col-md-4 filterDiv net">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet" target="_blank">
+                                                            <img src="img/net_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Create a .NET Application</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv container linux">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers-linux" target="_blank">
+                                                            <img src="img/linux_icon.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Deploy a Linux Container Application</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv container window">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers" target="_blank">
+                                                            <img src="img/windows_logo.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Deploy a Windows Container Application</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Row 2 -->
+                                                <div class="row">
+                                                    <div class="col-md-4 filterDiv spring">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-spring-boot" target="_blank">
+                                                            <img src="img/spring_boot_logo.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Deploy a Spring Boot Application</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv reliable">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-reliable-services" target="_blank">
+                                                            <img src="img/rocket_icon.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Deploy a Reliable Services Application</p>
+                                                    </div>
+                                                </div>
+
+                                                <script>
+                                                filterSelection("all")
+                                                function filterSelection(c) {
+                                                    var x, i;
+                                                    x = document.getElementsByClassName("filterDiv");
+                                                    if (c == "all") c = "";
+                                                    for (i = 0; i < x.length; i++) {
+                                                        w3RemoveClass(x[i], "show");
+                                                        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                                                    }
+                                                }
+
+                                                function w3AddClass(element, name) {
+                                                    var i, arr1, arr2;
+                                                    arr1 = element.className.split(" ");
+                                                    arr2 = name.split(" ");
+                                                    for (i = 0; i < arr2.length; i++) {
+                                                        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                                                    }
+                                                }
+
+                                                function w3RemoveClass(element, name) {
+                                                    var i, arr1, arr2;
+                                                    arr1 = element.className.split(" ");
+                                                    arr2 = name.split(" ");
+                                                    for (i = 0; i < arr2.length; i++) {
+                                                        while (arr1.indexOf(arr2[i]) > -1) {
+                                                            arr1.splice(arr1.indexOf(arr2[i]), 1);
+                                                        }
+                                                    }
+                                                    element.className = arr1.join(" ");
+                                                }
+
+                                                // Add active class to the current button (highlight it)
+                                                var btnContainer = document.getElementById("myBtnContainer");
+                                                var btns = btnContainer.getElementsByClassName("btn");
+                                                for (var i = 0; i < btns.length; i++) {
+                                                    btns[i].addEventListener("click", function () {
+                                                        var current = document.getElementsByClassName("active");
+                                                        current[0].className = current[0].className.replace(" active", "");
+                                                        this.className += " active";
+                                                    });
+                                                }
+                                                </script>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" onclick="filterSelection('all')" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Tutorials</h2>
+                            </div>
+                            <div class="panel-body lead">
+                                Tutorials are meant to give a more in-depth walk through. They provide you with tools as well as explanations
+                                for each step until you have accomplished your goal. <br />
+                                <img src="img/tutorial_icon.png" class="center-block read-icon">
+                                <button type="button" class="btn btn-info" onclick="filterSelection('all')" data-toggle="modal" data-target="#myModal2">
+                                    Go
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal2" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Tutorials</h4>
+                                            </div>
+                                            <div class="modal-body feature-cont">
+                                                <div id="myBtnContainer" class="row btnContainer">
+                                                    <button class="btn active btn-info" onclick="filterSelection('all')"> Show all</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('java')"> Java</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('net')"> .NET</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('health')"> Health</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('linux')"> Linux</button>
+                                                </div>
+                                                <br />
+                                                <!---Row 1-->
+                                                <div class="row">
+                                                    <div class="col-md-4 filterDiv net">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-dotnet-app" target="_blank">
+                                                            <img src="img/net_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Deploy a .NET app</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv java">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-java-app" target="_blank">
+                                                            <img src="img/linux_icon.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Deploy a Java app</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv net">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-host-app-in-a-container" target="_blank">
+                                                            <img src="img/java_icon.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Containerize an existing .NET app</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Row 2 -->
+                                                <div class="row">
+                                                    <div class="col-md-4 filterDiv linux">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-container-images" target="_blank">
+                                                            <img src="img/linux_icon.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Create a Linux container app</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv health">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-reliable-services" target="_blank">
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Create and manage a cluster</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv aws">
+                                                        <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-standalone-create-infrastructure" target="_blank">
+                                                            <img src="img/aws_logo.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Create a standalone cluster on AWS</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" onclick="filterSelection('all')" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Samples</h2>
+                            </div>
+                            <div class="panel-body lead">
+                                Samples tend to be repositories that you can download and clone. They will allow you to expore a specific concept
+                                in action by observing someone else's code. <br />
+                                <img src="img/sample_icon.png" class="center-block read-icon">
+                                <button type="button" class="btn btn-info" data-toggle="modal" onclick="filterSelection('all')" data-target="#myModal3">
+                                    Go
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal3" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Samples</h4>
+                                            </div>
+                                            <div class="modal-body feature-cont">
+                                                <!-- Filter Buttons -->
+                                                <div id="myBtnContainer" class="row btnContainer">
+                                                    <button class="btn active btn-info" onclick="filterSelection('all')"> Show all</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('java')"> Java</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('net')"> .NET</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('health')"> Health</button>
+                                                    <button class="btn btn-info" onclick="filterSelection('linux')"> Linux</button>
+                                                </div>
+                                                <br />
+                                                <!---Row 1-->
+                                                <div class="row">
+                                                    <div class="col-md-4 filterDiv standalone">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-standalone-cluster-configuration/" target="_blank">
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Service Fabric Standalone Cluster Configuration</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv java">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-java-getting-started/" target="_blank">
+                                                            <img src="img/java_icon.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Getting Started with Service Fabric with Java</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-containers/" target="_blank">
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Service Fabric Container Samples</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Row 2 -->
+                                                <div class="row">
+                                                    <div class="col-md-4 filterDiv net">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-core-getting-started/" target="_blank">
+                                                            <img src="img/java_icon.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Getting Started with Service Fabric with .NET Core</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-getting-started/" target="_blank">
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Service Fabric Getting Started</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-watchdog-service/" target="_blank">
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Service Fabric Watchdog Sample</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Row 3 -->
+                                                <div class="row">
+                                                    <div class="col-md-4 filterDiv">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-web-reference-app/" target="_blank">
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Service Fabric Web Reference Application</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-iot/" target="_blank">
+                                                            <img src="img/iot_logo.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Service Fabric IoT Sample</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-api-management/" target="_blank">
+                                                            <img src="img/api_management.png" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Service Fabric and Azure API Management</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Row 4 -->
+                                                <div class="row">
+                                                    <div class="col-md-4 filterDiv health">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-data-aggregation/" target="_blank">
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Service Fabric Data Aggregation Sample (aka HealthMetrics)</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv performance">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-performance/" target="_blank">
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Service Fabric Performance and Scalability samples</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv party">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-management-party-cluster/" target="_blank">
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Azure Service Fabric Party Cluster</p>
+                                                    </div>
+                                                    <div class="col-md-4 filterDiv backend">
+                                                        <a href="https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-data-streaming-websockets/" target="_blank">
+                                                            <img src="img/asf_logo.jpg" class="img-circle try-item" />
+                                                        </a>
+                                                        <p>Service Fabric Predictive Backend</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" onclick="filterSelection('all')" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
