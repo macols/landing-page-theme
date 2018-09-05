@@ -6199,6 +6199,10 @@ a.list-group-item-danger {
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
 }
 
+.panel-feature {
+    border-width:6px
+}
+
 .panel-body {
     padding: 15px
 }
@@ -7626,8 +7630,9 @@ button.close {
     border: 5px solid skyblue
 }
 
-feature-div. {
-    text-align: center
+.feature-div {
+    text-align: center;
+    margin-bottom: 10px
 }
 
 .download-button {
@@ -7689,4 +7694,9 @@ feature-div. {
 
 .filterDiv {
     display: none
+}
+
+.equal {
+    display: -webkit-flex;
+    display: flex
 }

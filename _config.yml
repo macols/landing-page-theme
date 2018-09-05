@@ -34,8 +34,6 @@ logo: /img/bluelogo.png
 # ----------------------- #
 
 social:
-  - title: github
-    url: https://github.com/Microsoft/service-fabric
   - title: linkedin
     url: https://www.linkedin.com/groups/8526708/profile
   - title: stack-overflow

@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\img"
+    "\\js",
+    "\\_includes",
+    "\\_layouts"
   ],
-  "SelectedNode": "\\img\\bluelogo.png",
+  "SelectedNode": "\\js\\landing-page.js",
   "PreviewInSolutionExplorer": false
 }
